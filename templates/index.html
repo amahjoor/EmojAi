@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Emoji Generator</h1>
+    <div class="input-container">
+        <input type="text" id="description" placeholder="Enter description">
+        <button onclick="generateEmojis()">Generate Emojis</button>
+    <!--<input type="number" id="num_emojis" placeholder="Enter # of results">-->
+    </div>
+    <br>
+    <div class="emojis" id="emojis"></div>
+    <div id="loading" class="loading">loading</div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
